@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Capone Cutz · Book a chair in Houston’s Third Ward</title>
+<meta name="description" content="Capone Cutz is a one-chair barbershop at 2702 McGowen Street in Houston’s Third Ward. Book a cut online, and pay online or at the shop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./page.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a class="wordmark" href="#top" aria-label="Capone Cutz, home">Capone Cutz</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#find">Find us</a>
+      <a class="nav-phone" href="tel:+17132562376">(713) 256-2376</a>
+      <a class="btn btn--primary btn--small" href="#book">Book a chair</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Book a chair in the Third Ward.</h1>
+        <p class="lead">One barber, one chair, cuts from $35.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#book">Book a chair</a>
+          <a class="btn btn--secondary" href="#services">See the services</a>
+        </div>
+        <p class="hero-note">Top 3 Houston barbershop for 2025, per BusinessRate.</p>
+      </div>
+      <div class="book-panel">
+        <h2>Pick a service and a time.</h2>
+        <form id="quickBook">
+          <div class="field">
+            <label for="qService">Service</label>
+            <select id="qService" name="service"></select>
+          </div>
+          <div class="field">
+            <label for="qDate">Day</label>
+            <input id="qDate" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="qTime">Time</label>
+            <select id="qTime" name="time"></select>
+          </div>
+          <button class="btn btn--primary" type="submit">Book a chair</button>
+          <p class="fineprint">Pay online or at the shop.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <figure class="shop-photo">
+      <span data-slot><img src="img/shop.jpg" alt="A barbershop interior with chairs and mirrors" width="1920" height="1280"></span>
+      <figcaption>Stand-in photograph.</figcaption>
+    </figure>
+  </div>
+
+  <div class="container"><hr class="rule-double"></div>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>The list, with prices.</h2>
+      </div>
+      <div class="svc-list">
+        <div class="svc">
+          <img class="svc-img" src="img/svc-cut.jpg" alt="A barber cutting a customer's hair" width="960" height="641" loading="lazy">
+          <h3>Capone Cut</h3>
+          <p>16 and up, no facial hair.</p>
+          <div class="svc-fig"><span class="agate svc-price">$35</span><span class="svc-dur">30 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-beard.jpg" alt="A barber trimming a beard" width="960" height="443" loading="lazy">
+          <h3>Capone Cut and Beard</h3>
+          <p>Cut with beard trim and line.</p>
+          <div class="svc-fig"><span class="agate svc-price">$40</span><span class="svc-dur">30 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-workz.jpg" alt="A customer resting under a hot towel" width="960" height="443" loading="lazy">
+          <h3>Capone Cut and The Workz</h3>
+          <p>Beard, razor edge, hot towel, enhancements.</p>
+          <div class="svc-fig"><span class="agate svc-price">$45</span><span class="svc-dur">45 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-design.jpg" alt="A barber shaping a cut with clippers" width="960" height="640" loading="lazy">
+          <h3>Capone Cut and Design</h3>
+          <p>Designs and freestyle, priced by design.</p>
+          <div class="svc-fig"><span class="agate svc-price">$50</span><span class="svc-dur">45 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-kidz.jpg" alt="A kids' barber chair shaped like a car" width="960" height="541" loading="lazy">
+          <h3>Kidz Cut</h3>
+          <p>Cuts for kids 15 and under.</p>
+          <div class="svc-fig"><span class="agate svc-price">$30</span><span class="svc-dur">30 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-kidz-design.jpg" alt="A finished fade haircut" width="960" height="635" loading="lazy">
+          <h3>Kidz Cut and Design</h3>
+          <p>Kids cut with a design.</p>
+          <div class="svc-fig"><span class="agate svc-price">$35</span><span class="svc-dur">45 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-shave.jpg" alt="Aftershave finishing a shave" width="619" height="640" loading="lazy">
+          <h3>Bald Head Shave</h3>
+          <p>Hot towel and razor shave.</p>
+          <div class="svc-fig"><span class="agate svc-price">$45</span><span class="svc-dur">45 minutes</span></div>
+        </div>
+        <div class="svc">
+          <img class="svc-img" src="img/svc-afterhours.jpg" alt="A neighborhood barbershop open late" width="960" height="640" loading="lazy">
+          <h3>After Hours Cutz</h3>
+          <p>Outside regular hours, barber’s discretion.</p>
+          <div class="svc-fig"><span class="agate svc-price">$65</span><span class="svc-dur">30 minutes</span></div>
+        </div>
+      </div>
+      <div class="house-rules">
+        <p><strong>House rules.</strong> Wash your hair before you arrive. Questions, text <a href="sms:+17132562376">(713) 256-2376</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2>Five stars, 257 times.</h2>
+        </div>
+      <div class="review-cols">
+        <figure class="review">
+          <span class="stars" aria-label="Five stars">★★★★★</span>
+          <blockquote>“Top notch barber. Great attention to detail and fade skills.”</blockquote>
+          <figcaption>Devon Olivis</figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" aria-label="Five stars">★★★★★</span>
+          <blockquote>“Been going to this man for years. He doesn’t miss. Mr. Consistent.”</blockquote>
+          <figcaption>Reginald Smith Jr</figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" aria-label="Five stars">★★★★★</span>
+          <blockquote>“One of the top barbers in Houston! Hands down!”</blockquote>
+          <figcaption>Xavier Dyer</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-more">Read all 257 reviews on <a href="https://app.thecut.co/barbers/CaponeCutz" target="_blank" rel="noopener">theCut</a>.</p>
+    </div>
+  </section>
+
+  <div class="container"><hr class="rule-double"></div>
+
+  <section class="section" id="book">
+    <div class="container">
+      <div class="section-head">
+        <h2>Book the chair.</h2>
+      </div>
+      <div class="book-grid">
+        <form class="book-form" id="bookForm" data-endpoint="">
+          <div class="field">
+            <label for="bService">Service</label>
+            <select id="bService" name="service"></select>
+          </div>
+          <div class="two">
+            <div class="field">
+              <label for="bDate">Day</label>
+              <input id="bDate" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="bTime">Time</label>
+              <select id="bTime" name="time"></select>
+            </div>
+          </div>
+          <div class="two">
+            <div class="field">
+              <label for="bName">Your name</label>
+              <input id="bName" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="bPhone">Mobile number</label>
+              <input id="bPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend>Payment</legend>
+            <div class="pay-options">
+              <label><input type="radio" name="pay" value="card" checked> Card</label>
+              <label><input type="radio" name="pay" value="applepay"> Apple Pay</label>
+              <label><input type="radio" name="pay" value="cashapp"> Cash App</label>
+              <label><input type="radio" name="pay" value="shop"> Pay at the shop</label>
+            </div>
+          </fieldset>
+          <p class="summary" id="bookSummary" role="status"></p>
+          <button class="btn btn--primary" type="submit">Book a chair</button>
+          <p class="form-status" id="bookStatus" role="status"></p>
+          <p class="form-note">Demonstration form: nothing is sent or charged. On the live site, booking and payment complete here.</p>
+        </form>
+        <div class="book-facts">
+          <h3>How booking works here</h3>
+          <ol>
+            <li>Pick a service and a time.</li>
+            <li>Pay online, or at the shop.</li>
+            <li>Arrive with washed hair.</li>
+          </ol>
+          <p class="fact"><strong>Running late?</strong> 15 minutes late means rescheduling.</p>
+          <p class="fact"><strong>After hours</strong> $65, at the barber’s discretion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="find">
+    <div class="container">
+      <div class="section-head">
+        <h2>2702 McGowen Street.</h2>
+        </div>
+      <div class="find-grid">
+        <table class="hours" aria-label="Opening hours">
+          <tbody>
+            <tr data-day="Mon"><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr data-day="Tue"><th scope="row">Tuesday</th><td>9 AM to 4 PM</td></tr>
+            <tr data-day="Wed"><th scope="row">Wednesday</th><td>9 AM to 4 PM</td></tr>
+            <tr data-day="Thu"><th scope="row">Thursday</th><td>9 AM to 7 PM</td></tr>
+            <tr data-day="Fri"><th scope="row">Friday</th><td>9 AM to 8 PM</td></tr>
+            <tr data-day="Sat"><th scope="row">Saturday</th><td>7 AM to 2 PM</td></tr>
+            <tr data-day="Sun"><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="address-block">
+          <p><strong>Capone Cutz</strong><br>
+          Clipper Styles, 2702 McGowen Street, Suite 1<br>
+          Houston, TX 77004</p>
+          <div class="find-links">
+            <a href="tel:+17132562376">Call or text (713) 256-2376</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Capone+Cutz+2702+McGowen+St+Suite+1+Houston+TX+77004" target="_blank" rel="noopener">Get directions</a>
+            <a href="https://www.instagram.com/Capone.Cutz/" target="_blank" rel="noopener">Instagram, @Capone.Cutz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <p class="brand3d">Capone Cutz</p>
+      <h2>Always accepting new clients.</h2>
+      <p class="lead">Book ahead, the chair is yours.</p>
+      <div class="hero-actions">
+        <a class="btn btn--paper" href="#book">Book a chair</a>
+        <a class="btn btn--secondary" href="tel:+17132562376">Call (713) 256-2376</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="statement">Get in the chair.</p>
+    <div class="footer-cols">
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Book a chair</a>
+        <a href="#find">Find us</a>
+      </nav>
+      <p>2702 McGowen Street, Suite 1, Houston, TX 77004. Phone (713) 256-2376.</p>
+    </div>
+    <p class="legal">© 2026 Capone Cutz. Demonstration website. Facts from public listings, November 2026.</p>
+    <p class="legal">Photographs: <a href="https://commons.wikimedia.org/wiki/File:Caleb%27s_Chop_Shop.jpg" target="_blank" rel="noopener">Tamanoeconomico</a> (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:Barber_cutting_hair_with_comb._Back_view_of_man_in_barber_shop.jpg" target="_blank" rel="noopener">Nenad Stojkovic</a> (CC BY 2.0), <a href="https://commons.wikimedia.org/wiki/File:Barbershop_Ritual_07_Beard_Trimming.jpg" target="_blank" rel="noopener">Alvinategyeka</a> (CC0), <a href="https://commons.wikimedia.org/wiki/File:Barber_trimming_hair_with_clippers_in_Kenya.jpg" target="_blank" rel="noopener">Lebu Ayiga</a> (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:Kids_car_barber_chair.jpg" target="_blank" rel="noopener">Sahil Shaikh</a> (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:Mid-fade_01.jpg" target="_blank" rel="noopener">Classic Barbers</a> (CC0), <a href="https://commons.wikimedia.org/wiki/File:DFC_2472_A_cozy_well-worn_neighborhood_barbershop_open_late_with_a_barber_at_work_among_mismatched_chairs_mirrors_and_hanging_portraits.jpg" target="_blank" rel="noopener">PattayaPatrol</a> (CC BY-SA 4.0), via Wikimedia Commons, as stand-ins for the shop’s own photographs.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SERVICES = [
+    ["Capone Cut", 35], ["Capone Cut and Beard", 40], ["Capone Cut and The Workz", 45],
+    ["Capone Cut and Design", 50], ["Kidz Cut", 30], ["Kidz Cut and Design", 35],
+    ["Bald Head Shave", 45], ["After Hours Cutz", 65]
+  ];
+  var HOURS = { 0: null, 1: null,
+    2: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM"],
+    3: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM"],
+    4: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM"],
+    5: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM"],
+    6: ["7:00 AM", "8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM"] };
+  function dayTimes(iso) { return HOURS[new Date(iso + "T12:00:00").getDay()]; }
+  function fill(sel, items, fmt) {
+    items.forEach(function (it, i) {
+      var o = document.createElement("option");
+      o.value = i; o.textContent = fmt(it);
+      sel.appendChild(o);
+    });
+  }
+  var qS = document.getElementById("qService"), qT = document.getElementById("qTime"),
+      bS = document.getElementById("bService"), bT = document.getElementById("bTime"),
+      qD = document.getElementById("qDate"), bD = document.getElementById("bDate");
+  [qS, bS].forEach(function (s) { fill(s, SERVICES, function (x) { return x[0] + ", $" + x[1]; }); });
+  function fillTimes(sel, iso) {
+    var t = dayTimes(iso) || [];
+    sel.innerHTML = "";
+    if (!t.length) {
+      var o = document.createElement("option");
+      o.value = ""; o.textContent = "Closed"; sel.appendChild(o); sel.disabled = true;
+      return t;
+    }
+    sel.disabled = false;
+    t.forEach(function (x, i) { var o = document.createElement("option"); o.value = i; o.textContent = x; sel.appendChild(o); });
+    return t;
+  }
+  var parts = {};
+  new Intl.DateTimeFormat("en-US", { timeZone: "America/Chicago", year: "numeric", month: "2-digit", day: "2-digit" })
+    .formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+  var base = new Date(parts.year + "-" + parts.month + "-" + parts.day + "T12:00:00");
+  base.setDate(base.getDate() + 1);
+  var iso = base.getFullYear() + "-" + String(base.getMonth() + 1).padStart(2, "0") + "-" + String(base.getDate()).padStart(2, "0");
+  qD.min = iso; bD.min = iso; qD.value = iso; bD.value = iso;
+  var curTimes = fillTimes(bT, iso);
+  fillTimes(qT, iso);
+  qD.addEventListener("change", function () { fillTimes(qT, qD.value); });
+  bD.addEventListener("change", function () { curTimes = fillTimes(bT, bD.value); });
+
+  var summary = document.getElementById("bookSummary");
+  function updateSummary() {
+    var svc = SERVICES[parseInt(bS.value, 10)];
+    var pay = document.querySelector('input[name="pay"]:checked').value;
+    var when = bD.value ? new Date(bD.value + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" }) : "";
+    if (!curTimes.length) {
+      summary.textContent = svc[0] + ", " + when + ". The shop is closed that day: pick another day.";
+      return;
+    }
+    var due = pay === "shop" ? "Due today: $0. Pay $" + svc[1] + " at the shop." : "Due today: $" + svc[1] + ".";
+    summary.textContent = svc[0] + ", " + when + " at " + curTimes[parseInt(bT.value, 10)] + ". Total $" + svc[1] + ". " + due;
+  }
+  [bS, bT, bD].forEach(function (el) { el.addEventListener("change", updateSummary); });
+  document.querySelectorAll('input[name="pay"]').forEach(function (el) { el.addEventListener("change", updateSummary); });
+  updateSummary();
+
+  document.getElementById("quickBook").addEventListener("submit", function (e) {
+    e.preventDefault();
+    bS.value = qS.value; bD.value = qD.value;
+    curTimes = fillTimes(bT, bD.value);
+    if (qT.value !== "") bT.value = qT.value;
+    updateSummary();
+    document.getElementById("book").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("bName").focus({ preventScroll: true });
+  });
+
+  document.getElementById("bookForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("bookStatus").textContent = "Nothing was sent. This form is a demonstration: on the live site it takes the booking and the payment on this page.";
+  });
+
+  try {
+    var chi = new Intl.DateTimeFormat("en-US", { timeZone: "America/Chicago", weekday: "short" }).format(new Date());
+    var row = document.querySelector('.hours tr[data-day="' + chi + '"]');
+    if (row) row.classList.add("today");
+  } catch (err) {}
+})();
+</script>
+
+</body>
+</html>
